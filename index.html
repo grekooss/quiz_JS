@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QUIZ</title>
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+	<body>
+		<div class="quiz">
+			<label for="quiz-number-question">How many questions?</label>
+			<input type="text" id="quiz-number-question" name="number" value="5" />
+
+			<label for="quiz-difficulty">Select difficulty</label>
+			<select id="quiz-difficulty">
+				<option value="any">Any difficulty</option>
+				<option value="hard">Hard</option>
+				<option value="medium">Medium</option>
+				<option value="easy">Easy</option>
+			</select>
+			<button class="quiz-start-button" id="quiz-start-button">START QUIZ</button>
+
+			<h2 id="question-container"><!-- JS - Add question and difficulty --></h2>
+			<div id="answer-buttons">
+				<!-- JS - Add answer buttons -->
+			</div>
+			<button class="quiz-button-next" id="next-button" style="display: none">Next Question</button>
+			<div class="quiz-result" id="result-container">
+				<!-- JS - Score -->
+				<!-- JS - Table -->
+			</div>
+		</div>
+
+		<script src="/js/quiz.js"></script>
+	</body>
+</html>
